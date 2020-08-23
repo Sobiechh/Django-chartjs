@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url
-from charts.views import HomeView, get_data
+from charts.views import HomeView, get_data, ChartData
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/data', get_data, name = 'api-data'),
+    url(r'^api/data/$', get_data, name = 'api-data'),
+    url(r'^api/chart/data/$', ChartData.as_view()),
     url(r'^$', HomeView.as_view(), name = 'home')
 ]
