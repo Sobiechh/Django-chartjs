@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/data/$', get_data, name = 'api-data'),
     url(r'^api/chart/data/$', ChartData.as_view()),
-    url(r'^$', HomeView.as_view(), name = 'home')
+    url('', HomeView.as_view(), name = 'home')
 ]
