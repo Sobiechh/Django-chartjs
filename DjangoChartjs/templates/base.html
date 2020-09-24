@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title> Charts </title>
+        {% include 'base/css.html' %}
+        {% include 'base/bootstrap.html' %}
+    </head>
+    <body>
+        <div class = 'container'>
+            {% block content %}
+            {% endblock content %}
+        </div>
+        {% include 'base/js.html' %}
+        <script>
+            $(document).ready(function(){
+                {% block jquery %}{% endblock %}
+            });
+        </script>
+    </body>
+</html>

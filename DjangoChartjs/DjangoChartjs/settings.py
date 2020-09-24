@@ -53,10 +53,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'DjangoChartjs.urls'
 
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\Piotr\Desktop\Django-chartjs\DjangoChartjs\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
