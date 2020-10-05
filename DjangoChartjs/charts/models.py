@@ -127,7 +127,7 @@ class Games(models.Model):
     genre = models.CharField(max_length=20, blank=True, null=True)
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'games'
 
 
