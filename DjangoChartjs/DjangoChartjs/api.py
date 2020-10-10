@@ -1,8 +1,8 @@
 from rest_framework import routers
-from charts import api_views as myapp_views
+from api import api_views as views
 
 router = routers.DefaultRouter()
-router.register(r'games', myapp_views.GamesViewset)
-router.register(r'organizations', myapp_views.OrganizationsViewset)
-router.register(r'players', myapp_views.PlayersViewset)
-router.register(r'teams', myapp_views.TeamsViewset)
+router.register(r'games', views.GamesViewset)
+router.register(r'organizations', views.OrganizationsViewset)
+router.register(r'players', views.PlayersViewset)
+router.register(r'teams', views.TeamsViewset)

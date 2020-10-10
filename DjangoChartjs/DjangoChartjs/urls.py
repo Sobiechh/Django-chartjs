@@ -20,8 +20,6 @@ from .api import router
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'data/api/', include(router.urls)), #do not use regex here ...
-    #url(r'^api/data/$', get_data, name = 'api-data'),
-    #url(r'^api/chart/data/$', ChartData.as_view()),
-    #url('', HomeView.as_view(), name = 'home'),
+    url(r'^api/data/', include(router.urls)), #do not use regex here\...
+    url('', HomeView.as_view(), name = 'home '),
 ]
